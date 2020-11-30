@@ -22,29 +22,29 @@
             <ColumnDefinition Width="*" />
         </Grid.ColumnDefinitions>
 
-        <Label Grid.ColumnSpan="4" HorizontalAlignment="Right" VerticalAlignment="Bottom" Content="0" FontSize="72"/>
-        <Button Grid.Row="1" Grid.Column="0" FontSize="28" Margin="5">AC</Button>
-        <Button Grid.Row="1" Grid.Column="1" FontSize="28" Margin="5">+/1</Button>
-        <Button Grid.Row="1" Grid.Column="2" FontSize="28" Margin="5">%</Button>
-        <Button Grid.Row="1" Grid.Column="3" FontSize="28" Margin="5">/</Button>
+        <Label Grid.ColumnSpan="4" HorizontalAlignment="Right" VerticalAlignment="Bottom" Content="0" FontSize="72" x:Name="res_lbl"/>
+        <Button Grid.Row="1" Grid.Column="0" x:Name="ac_btn" Style="{StaticResource ExtraButtonStyle}">AC</Button>
+        <Button Grid.Row="1" Grid.Column="1" x:Name="neg_btn" Style="{StaticResource ExtraButtonStyle}">+/-</Button>
+        <Button Grid.Row="1" Grid.Column="2" x:Name="perc_btn" Style="{StaticResource ExtraButtonStyle}">%</Button>
+        <Button Grid.Row="1" Grid.Column="3" x:Name="div_btn" Style="{StaticResource OperatorButtonStyle}" Click="Operation_Click">/</Button>
 
-        <Button Grid.Row="2" Grid.Column="0" FontSize="28" Margin="5">7</Button>
-        <Button Grid.Row="2" Grid.Column="1" FontSize="28" Margin="5">8</Button>
-        <Button Grid.Row="2" Grid.Column="2" FontSize="28" Margin="5">9</Button>
-        <Button Grid.Row="2" Grid.Column="3" FontSize="28" Margin="5">*</Button>
+        <Button Grid.Row="2" Grid.Column="0" x:Name="seven_btn" Style="{StaticResource NumButtonStyle}" Click="Num_btn_Click">7</Button>
+        <Button Grid.Row="2" Grid.Column="1" x:Name="eight_btn" Style="{StaticResource NumButtonStyle}" Click="Num_btn_Click">8</Button>
+        <Button Grid.Row="2" Grid.Column="2" x:Name="nine_btn" Style="{StaticResource NumButtonStyle}" Click="Num_btn_Click">9</Button>
+        <Button Grid.Row="2" Grid.Column="3" x:Name="multiply_btn" Style="{StaticResource OperatorButtonStyle}" Click="Operation_Click">*</Button>
 
-        <Button Grid.Row="3" Grid.Column="0" FontSize="28" Margin="5">4</Button>
-        <Button Grid.Row="3" Grid.Column="1" FontSize="28" Margin="5">5</Button>
-        <Button Grid.Row="3" Grid.Column="2" FontSize="28" Margin="5">6</Button>
-        <Button Grid.Row="3" Grid.Column="3" FontSize="28" Margin="5">-</Button>
+        <Button Grid.Row="3" Grid.Column="0" x:Name="four_btn" Style="{StaticResource NumButtonStyle}" Click="Num_btn_Click">4</Button>
+        <Button Grid.Row="3" Grid.Column="1" x:Name="five_btn" Style="{StaticResource NumButtonStyle}" Click="Num_btn_Click">5</Button>
+        <Button Grid.Row="3" Grid.Column="2" x:Name="six_btn" Style="{StaticResource NumButtonStyle}" Click="Num_btn_Click">6</Button>
+        <Button Grid.Row="3" Grid.Column="3" x:Name="sub_btn" Style="{StaticResource OperatorButtonStyle}" Click="Operation_Click">-</Button>
 
-        <Button Grid.Row="4" Grid.Column="0" FontSize="28" Margin="5">3</Button>
-        <Button Grid.Row="4" Grid.Column="1" FontSize="28" Margin="5">2</Button>
-        <Button Grid.Row="4" Grid.Column="2" FontSize="28" Margin="5">1</Button>
-        <Button Grid.Row="4" Grid.Column="3" FontSize="28" Margin="5">+</Button>
+        <Button Grid.Row="4" Grid.Column="0" x:Name="three_btn" Style="{StaticResource NumButtonStyle}" Click="Num_btn_Click">3</Button>
+        <Button Grid.Row="4" Grid.Column="1" x:Name="two_btn" Style="{StaticResource NumButtonStyle}" Click="Num_btn_Click">2</Button>
+        <Button Grid.Row="4" Grid.Column="2" x:Name="one_btn" Style="{StaticResource NumButtonStyle}" Click="Num_btn_Click">1</Button>
+        <Button Grid.Row="4" Grid.Column="3" x:Name="add_btn" Style="{StaticResource OperatorButtonStyle}" Click="Operation_Click">+</Button>
 
-        <Button Grid.Row="5" Grid.ColumnSpan="2" FontSize="28" Margin="5">0</Button>
-        <Button Grid.Row="5" Grid.Column="2" FontSize="28" Margin="5">.</Button>
-        <Button Grid.Row="5" Grid.Column="3" FontSize="28" Margin="5">=</Button>
+        <Button Grid.Row="5" Grid.ColumnSpan="2" x:Name="zero_btn" Style="{StaticResource NumButtonStyle}" Click="Num_btn_Click">0</Button>
+        <Button Grid.Row="5" Grid.Column="2" x:Name="point_btn" Style="{StaticResource NumButtonStyle}" Click="Point_btn_Click">.</Button>
+        <Button Grid.Row="5" Grid.Column="3" x:Name="res_btn" Style="{StaticResource OperatorButtonStyle}" Click="Res_btn_Click">=</Button>
     </Grid>
 </Window>
